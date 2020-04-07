@@ -16,7 +16,7 @@ In this project we will learn how to create a very simple Web API using `Node.js
 
 Please follow along as the instructor builds the API step by step.
 
-## Endpoints
+## Public Endpoints
 
 - Hubs Resource: /api/hubs
 - Clients: /api/clients
@@ -24,3 +24,14 @@ Please follow along as the instructor builds the API step by step.
 
 Create a Product => /add_product (NO!); the RESTful way is POST /api/products
 Update a Product => /update_product (NO!); the RESTful way is PATCH/PUT /api/products/:id
+
+## Private Endpoints
+
+- Clients: /admin/clients
+- Products: /admin/products
+
+Break API into sub-API components similar to how a React app is structured
+This is done with server side routing
+Routers can be nested inside other routers (App wrapps all routers)
+
+Router for public endpoints and a separate router for private endpoints
