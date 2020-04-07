@@ -15,3 +15,12 @@ In this project we will learn how to create a very simple Web API using `Node.js
 - [ ] type `npm i` to download dependencies.
 
 Please follow along as the instructor builds the API step by step.
+
+## Endpoints
+
+- Hubs Resource: /api/hubs
+- Clients: /api/clients
+- Products: /api/products
+
+Create a Product => /add_product (NO!); the RESTful way is POST /api/products
+Update a Product => /update_product (NO!); the RESTful way is PATCH/PUT /api/products/:id
